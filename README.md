@@ -29,7 +29,7 @@ The following open-source packages are required to run this project:
 ***
 
 ## Dataset
-This project uses two separate datasets for training the two different detection models. It's noted that only a subset of the files is included in the project due to size restrictions, a common practice for large datasets in version control systems like Git. The full datasets are often linked for download separately.
+This project uses two separate datasets for training the two different detection models. Note that only a subset of the files is included in the project repo due to size restrictions.
 
 ### Bike Rider Dataset
 A custom dataset of **739 images** was created by scraping images from Google. These images, which include riders with and without helmets, were then annotated using the LabelImg tool.
