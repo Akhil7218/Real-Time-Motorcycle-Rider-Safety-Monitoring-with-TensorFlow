@@ -32,10 +32,10 @@ The following open-source packages are required to run this project:
 This project uses two separate datasets for training the two different detection models. It's noted that only a subset of the files is included in the project due to size restrictions, a common practice for large datasets in version control systems like Git. The full datasets are often linked for download separately.
 
 ### Bike Rider Dataset
-A custom dataset of **739 images** was collected via web scraping from Google Images using the query “Biker riders wearing a helmet or no helmet”. This dataset was used to train the first detection module. The images were annotated using the **LabelImg** tool, an open-source graphical image annotation tool. LabelImg allows users to draw bounding boxes around objects of interest and assign class labels. The dataset can be downloaded from [here](https://example.com/bike-rider-dataset).
+A custom dataset of **739 images** was created by scraping images from Google. These images, which include riders with and without helmets, were then annotated using the LabelImg tool.
 
 ### Helmet Dataset
-A dataset of **764 images** containing two distinct classes ("Helmet" and "No Helmet") from a [Kaggle](https://www.kaggle.com/) source was used for the second module. The bounding box annotations for this dataset are provided in the **XML format**.
+A dataset of **764 images** containing two distinct classes ("Helmet" and "No Helmet") was taken from [Kaggle](https://www.kaggle.com/). The bounding box annotations for this dataset are provided in the **XML format**.
 
 ***
 
@@ -48,7 +48,7 @@ The system follows a two-stage pipeline:
 ***
 
 ## Training
-The project uses pre-trained models, but the second stage utilizes a custom-trained **YOLOv3** model. The `.cfg` and `.weights` files (`yolov3_custom.cfg` and `yolov3_custom_4000.weights`) are used for this. Training a YOLOv3 model on a custom dataset involves several steps, including data collection and annotation, defining the model's configuration, and running the training process.
+The project uses pre-trained models, but the second stage utilizes a custom-trained **YOLOv3** model. The `.cfg` and `.weights` files (`yolov3_custom.cfg` and `yolov3_custom_4000.weights`) are used for this.
 
 ## Implementation
 The implementation is structured in a Jupyter Notebook (`detection.ipynb`) and consists of the following key steps:
